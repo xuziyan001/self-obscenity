@@ -51,6 +51,9 @@ server {
 		# as directory, then fall back to displaying a 404.
 		# try_files $uri $uri/ =404;
 		alias /root/html/;
+		autoindex on;
+		autoindex_localtime on;
+		autoindex_exact_size on;
 		expires 24h;
 	}
 
