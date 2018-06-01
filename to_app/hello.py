@@ -3,7 +3,7 @@ import tornado.web
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
-        self.write("Hello, world")
+        self.write("Here's Ziyan, pls view <a href=\"/static/UserReview.html\">here</a>.")
 
 def make_app():
     return tornado.web.Application([
